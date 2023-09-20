@@ -5,21 +5,15 @@ function printFibonacci($count) {
 
     echo "The first $count Fibonacci numbers are: ";
 
-    for ($i = 1; $i <= $count; $i++) {
-        // Print the current Fibonacci number
+    for ($i = 1; $i <= $count; $i++) { 
         echo $first . ' ';
-
-        // Calculate the next Fibonacci number
         $next = $first + $second;
-
-        // Update the values for the next iteration
+  
         $first = $second;
         $second = $next;
     }
 
     echo "\n";
 }
-
-// Call the function to print the first 15 Fibonacci numbers
 printFibonacci(15);
 ?>
